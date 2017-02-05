@@ -24,6 +24,7 @@ export function fav(userId, token, itemId) {
 }
 
 export function addToCart(userId, token, itemId) {
+  console.log('in add to cart api');
   const options = {
     ...defaultOptions,
     body: JSON.stringify({ itemId })
